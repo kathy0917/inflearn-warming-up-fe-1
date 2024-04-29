@@ -63,7 +63,7 @@ const data = [
   },
   {
     id: 4,
-    title: 'Dinne',
+    title: 'Dinner',
     type: [
       {
         'bison steak': {
