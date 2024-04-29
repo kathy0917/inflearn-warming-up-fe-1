@@ -1,0 +1,58 @@
+* {
+  font-family: 'Roboto';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4ecfa;
+}
+header {
+  font-size: 30px;
+  margin-top: 50px;
+}
+.food-type button {
+  border: none;
+  outline: none;
+  background-color: #275efe;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 16px 32px;
+  margin: 50px 10px 50px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.food-type button:hover {
+  background-color: #ffffff;
+  color: #275efe;
+}
+
+.food-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.food-content p {
+  flex-wrap: wrap-reverse;
+}
+
+.food-content div {
+  margin: 10px 30px 10px 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.food-content p {
+  max-width: 300px;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
