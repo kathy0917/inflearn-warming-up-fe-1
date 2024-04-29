@@ -24,13 +24,13 @@ const data = [
         description: LOREMIPSUM,
       },
       {
-        title: 'egg-attack',
+        title: 'egg attack',
         image: '../img/egg.jpeg',
         price: 2000,
         description: LOREMIPSUM,
       },
       {
-        title: 'american-classic',
+        title: 'american classic',
         image: '../img/classic.jpeg',
         price: 4000,
         description: LOREMIPSUM,
