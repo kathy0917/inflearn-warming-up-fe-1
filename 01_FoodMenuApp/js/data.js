@@ -6,10 +6,10 @@ const data = [
     title: 'Breakfast',
     type: [
       {
-        pancakes: {
-          price: 3000,
-          description: LOREMIPSUM,
-        },
+        title: 'pancakes',
+        image: '../img/pancakes.jpg',
+        price: 3000,
+        description: LOREMIPSUM,
       },
     ],
   },
@@ -18,22 +18,22 @@ const data = [
     title: 'Lunch',
     type: [
       {
-        diner: {
-          price: 1000,
-          description: LOREMIPSUM,
-        },
+        title: 'diner',
+        image: '../img/diner.jpg',
+        price: 1000,
+        description: LOREMIPSUM,
       },
       {
-        'egg attack': {
-          price: 2000,
-          description: LOREMIPSUM,
-        },
+        title: 'egg-attack',
+        image: '../img/egg.jpeg',
+        price: 2000,
+        description: LOREMIPSUM,
       },
       {
-        'american classic': {
-          price: 4000,
-          description: LOREMIPSUM,
-        },
+        title: 'american-classic',
+        image: '../img/classic.jpeg',
+        price: 4000,
+        description: LOREMIPSUM,
       },
     ],
   },
@@ -42,22 +42,22 @@ const data = [
     title: 'Shakes',
     type: [
       {
-        milkshake: {
-          price: 2000,
-          description: LOREMIPSUM,
-        },
+        title: 'milkshake',
+        image: '../img/milkshake.png',
+        price: 2000,
+        description: LOREMIPSUM,
       },
       {
-        'oreo dream': {
-          price: 7000,
-          description: LOREMIPSUM,
-        },
+        title: 'oreo dream',
+        image: '../img/oreo.jpeg',
+        price: 7000,
+        description: LOREMIPSUM,
       },
       {
-        'quarantine buddy': {
-          price: 1000,
-          description: LOREMIPSUM,
-        },
+        title: 'quarantine buddy',
+        image: '../img/quarantine.jpeg',
+        price: 1000,
+        description: LOREMIPSUM,
       },
     ],
   },
@@ -66,10 +66,10 @@ const data = [
     title: 'Dinner',
     type: [
       {
-        'bison steak': {
-          price: 2000,
-          description: LOREMIPSUM,
-        },
+        title: 'bison steak',
+        image: '../img/steak.jpeg',
+        price: 2000,
+        description: LOREMIPSUM,
       },
     ],
   },
