@@ -32,7 +32,7 @@ const drawContents = (foods) => {
 
     const content = `<img src='01_FoodMenuApp/${food.image}'/>
     <div>${food.title}</div>
-    <div>${food.price}</div>
+    <div>${food.price}원</div>
     <p>${food.description}</p>
     `;
     div.innerHTML = content;
@@ -51,7 +51,7 @@ const drawAllContents = (allFoods) => {
 
       const content = `<img src='01_FoodMenuApp/${food.image}'/>
             <div>${food.title}</div>
-            <div>${food.price}</div>
+            <div>${food.price}원</div>
             <p>${food.description}</p>
             `;
       div.innerHTML = content;
