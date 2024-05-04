@@ -1,4 +1,4 @@
-import rockPaperScissors from './const.js';
+import ROCKPAPERSCISSORS from './const.js';
 
 const init = () => {
   handlePlayerBtn();
@@ -14,7 +14,7 @@ const onClickPlayBtn = (e) => {
 };
 
 const playGame = (player) => {
-  const computer = rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)];
+  const computer = ROCKPAPERSCISSORS[Math.floor(Math.random() * ROCKPAPERSCISSORS.length)];
   let winner = 'player';
   if (player === '가위' && computer === '바위') winner = 'computer';
   else if (player === '보' && computer === '가위') winner = 'computer';
