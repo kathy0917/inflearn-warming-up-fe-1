@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissorsApp</title>
+    <link type="text/css" rel="stylesheet" href="./index.css"></link>
+  </head>
+  <body>
+    <header>가위 바위 보</header>
+    <main class="main-content">
+      <div class="result-content">
+        <div class="player">플레이어
+          <div class="player-cnt">0</div>
+        </div>
+        <div class="computuer">컴퓨터
+          <div class="computer-cnt">0</div>
+        </div>
+      </div>
+      <div class="select-content">
+        <div class="before">
+          선택하기
+      </br>
+      <div class="game-cnt">남은 횟수: <span>10</span>
+        </div>
+        <div class="play-button">
+          <button>가위</button>
+          <button>바위</button>
+          <button>보</button>
+      </div>
+      <div class="winner" style='display:none'></div>
+        </div>
+        <div class="after" style='display:none'>게임 종료!
+          게임에서 <span></span>
+        <button class='replay-button'>다시 시작</button></div>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
