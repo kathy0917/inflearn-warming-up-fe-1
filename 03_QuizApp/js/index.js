@@ -61,25 +61,25 @@ const handleAnswerBtn = (answer) => {
 
       document.querySelector('.next').style.display = 'block';
       document.querySelector('.retry').style.display = 'none';
-      document.body.style.backgroundColor = 'green';
+      document.body.style.backgroundColor = '#157145';
     } else if (document.getElementById(`none`)) {
-      document.getElementById(`none`).style.backgroundColor = 'green';
+      document.getElementById(`none`).style.backgroundColor = '#157145';
       if (e.target.id === 'none') {
         document.querySelector('.next').style.display = 'block';
-        document.body.style.backgroundColor = 'green';
+        document.body.style.backgroundColor = '#157145';
       } else {
         document.querySelector('.retry').style.display = 'block';
-        document.body.style.backgroundColor = 'red';
+        document.body.style.backgroundColor = '#a22c29';
       }
     } else {
-      document.body.style.backgroundColor = 'red';
+      document.body.style.backgroundColor = '#a22c29';
       document.querySelector('.next').style.display = 'none';
       document.querySelector('.retry').style.display = 'block';
     }
     const button = document.querySelector('.answer').querySelectorAll('button');
-    button.forEach((ele) => (ele.style.backgroundColor = 'red'));
-    if (document.getElementById(`${answer}`)) document.getElementById(`${answer}`).style.backgroundColor = 'green';
-    if (document.getElementById(`none`)) document.getElementById(`none`).style.backgroundColor = 'green';
+    button.forEach((ele) => (ele.style.backgroundColor = '#a22c29'));
+    if (document.getElementById(`${answer}`)) document.getElementById(`${answer}`).style.backgroundColor = '#157145';
+    if (document.getElementById(`none`)) document.getElementById(`none`).style.backgroundColor = '#157145';
   };
   document.querySelector('.answer').addEventListener('click', onClickAnswerBtn);
 };
