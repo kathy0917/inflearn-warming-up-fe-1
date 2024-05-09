@@ -1,0 +1,74 @@
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
+.untyped {
+  color: black;
+}
+body {
+  background-color: #e7c6ff;
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  margin-top: 10%;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.evaluation > div > span {
+  font-size: 20px;
+}
+.evaluation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.evaluation > div {
+  margin-right: 15%;
+}
+
+.sentence {
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.user-typing {
+  margin-top: 5%;
+}
+
+.retry {
+  margin-top: 10%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #c8b6ff;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 16px 32px;
+  margin: 50px 10px 50px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #c8b6ff;
+}
+
+input {
+  width: 600px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 10px;
+}
