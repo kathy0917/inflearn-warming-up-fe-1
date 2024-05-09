@@ -4,11 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RockPaperScissorsApp</title>
+    <title>TypingTestApp</title>
     <link type="text/css" rel="stylesheet" href="./index.css"></link>
   </head>
   <body>
+    <h1>타이핑 스피드 측정</h1>
     <main class="main-content">
+      <div class="evaluation">
+        <div class="wpm" style="display:none">
+          <h3>WPM</h3>
+          <span>0</span>
+        </div>
+        <div class="cpm" style="display:none">
+          <h3>CPM</h3>
+          <span>0</span>
+        </div>
+        <div class="errors">
+          <h3>ERRORS</h3>
+          <span>0</span>
+        </div>
+        <div class="time">
+          <h3>TIME</h3>
+          <span id='second'>60</span>
+          <span>s</span>
+        </div>
+        <div class="accuracy">
+          <h3>%ACCURACY</h3>
+          <span>0</span>
+        </div>
+      </div>
+      <div class="sentence"></div>
+      <input type="text" class="user-typing" placeholder="여기에 타이핑을 하세요."/>
+      <button class="retry" style="display: none">다시 시작</button>
     </main>
     <script type="module" src="./js/index.js"></script>
   </body>
