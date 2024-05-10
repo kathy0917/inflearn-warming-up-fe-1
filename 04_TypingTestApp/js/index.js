@@ -39,7 +39,6 @@ const makeTimer = () => {
 const drawTimer = () => {
   const second = document.getElementById('second');
   const timer = Number(second.innerText) - 1;
-  console.log(timer);
 
   if (timer < 0) {
     second.innerText = 60;
@@ -97,8 +96,6 @@ const calculateAccuracy = () => {
   input.addEventListener('input', function () {
     const correctLetter = Number(localStorage.getItem('correctLetter')) + document.querySelectorAll('.correct').length;
     const inputLen = Number(localStorage.getItem('inputLen')) + input.value.length;
-
-    console.log(Math.floor((correctLetter / inputLen) * 100));
     document.querySelector('.accuracy').querySelector('span').innerHTML = Math.floor((correctLetter / inputLen) * 100);
   });
 };
