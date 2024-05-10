@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Form from './components/Form';
+import Lists from './components/Lists';
+
+const initialBudgetData = localStorage.getItem('budgetData') ? JSON.parse(localStorage.getItem('budgetData')) : [];
 
 function App() {
+  const [value, setValue] = useState('');
+  const [budgetData, setBudgetData] = useState(initialBudgetData);
+
+  const handleRemoveClick = () => {};
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>예산 계산기</h1>
+      <Form handleSubmit={handleSubmit} value={value} setValue={setValue} />
+      <Lists budgetData={budgetData} setBudgetData={setBudgetData} />
+      <button onClick={handleRemoveClick}>목록 지우기</button>
     </div>
   );
 }
