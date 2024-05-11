@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './List.css';
 
 const List = ({ id, title, price, budgetData, setBudgetData }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -32,7 +33,7 @@ const List = ({ id, title, price, budgetData, setBudgetData }) => {
 
   if (isEditing) {
     return (
-      <div>
+      <div className="list">
         <input value={editedTitle} onChange={handleEditChange} autoFocus />
         <input value={editedPrice} onChange={handleEditPrice} />
         <button onClick={() => setIsEditing(false)}>x</button>
@@ -41,10 +42,12 @@ const List = ({ id, title, price, budgetData, setBudgetData }) => {
     );
   } else {
     return (
-      <div key={id}>
+      <div className="list" key={id}>
         <span>{title}</span>
         <span>{price}</span>
-        <button onClick={() => setIsEditing(true)}>edit</button>
+        <button className="editBtn" onClick={() => setIsEditing(true)}>
+          edit
+        </button>
         <button onClick={() => handleDelete(id)}>x</button>
       </div>
     );
