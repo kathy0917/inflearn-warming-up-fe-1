@@ -7,5 +7,4 @@
 
 
 ### 결과물
-![image](https://github.com/kathy0917/inflearn-warming-up-fe-1/assets/28476745/2a4f95c8-dac5-4cc9-a84e-2c34b62b519c)
-
+![May-18-2024 23-56-25](https://github.com/kathy0917/inflearn-warming-up-fe-1/assets/28476745/692d1fb9-77f5-4d61-9de9-f992bbb8d6c9)
